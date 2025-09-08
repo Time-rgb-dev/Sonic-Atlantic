@@ -1,6 +1,6 @@
 function player_state_jump(){
 	//List of states that allow for jumping
-	var can_jump_states = [ST_NORMAL, ST_ROLL, ST_SKID];
+	var can_jump_states = [ST_NORMAL, ST_ROLL, ST_SKID, ST_WALLSLIDE];
 	
 	//Run the loop on array
 	for (var i = 0; i < array_length(can_jump_states); ++i) 
@@ -13,8 +13,12 @@ function player_state_jump(){
 	}
 	
 	//Trigger jump
-	if(press_action && ground && !touching_ceiling && !force_roll && can_jump)
+	if(press_action && !touching_ceiling && !force_roll && can_jump)
 	{
+		if state != ST_WALLSLIDE
+		{
+			if ground
+			{
 		//Change animation
 		animation_play(animator, ANIM_ROLL);
 		
@@ -38,6 +42,36 @@ function player_state_jump(){
 			
 		//Play the sound
 		play_sound(sfx_jump);
+		}
+		    }
+			
+			
+		else
+		{
+				//Change animation
+		animation_play(animator, ANIM_FALL);
+		
+		//Jump off the terrain
+		y_speed -= jump_strength;	
+		x_speed -= 6 * facing
+			
+		//Trigger the jump flag
+		jump_flag = true;
+			
+		//Detach player off the ground and change state
+		ground = false;
+		state = ST_JUMP
+			
+		//Change jump animation duration
+		jump_anim_speed = floor(max(0, 4-abs(ground_speed)));
+			
+		//Reset angle and floor mode
+		ground_angle = 0;
+		player_reposition_mode(CMODE_FLOOR);
+			
+		//Play the sound
+		play_sound(sfx_jump);
+		}
 	}
 	
 	

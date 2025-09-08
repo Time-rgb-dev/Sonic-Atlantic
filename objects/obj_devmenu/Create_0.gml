@@ -8,6 +8,6 @@
 
 	//Storage array
 
-	Presentation = [];
-	//Stages = [rm_arboreal_agate1, rm_arboreal_agate2, rm_bridge];
+	Presentation = [rm_alpine_wilds1, rm_arboreal_agate1];
+	Stages = [rm_alpine_wilds1, rm_alpine_wilds2, rm_arboreal_agate1, rm_arboreal_agate2]
 	Unfinished = [];

@@ -5,14 +5,14 @@
 	
 	//The lists
 	zone_list = [
-	["ARBOREAL AGATE", rm_arboreal_agate1, rm_arboreal_agate2],
+	//["ARBOREAL AGATE", rm_arboreal_agate1, rm_arboreal_agate2],
 	["ALPINE WILDS", rm_alpine_wilds1, rm_alpine_wilds2],
 	];
 	
 	reset_stage_data();
 	global.score = 0;
 
-	quotes = ["WELCOME TO HARMONY FRAMEWORK!"];
+	quotes = ["WELCOME TO THE ATLANTIC HARMONY PORT!"];
 	
 	quote_index = irandom(array_length(quotes)-1);
 	

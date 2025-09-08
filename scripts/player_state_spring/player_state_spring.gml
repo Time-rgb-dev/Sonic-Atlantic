@@ -8,6 +8,18 @@ function player_state_spring(){
 	//Change state when falling
 	if(y_speed >= 0) 
 	{
-		state = ST_NORMAL;
+		state = ST_NORMAL
+	//Change animation
+	
+	if y_speed >= 2.0
+	  {
+	   animation_play(animator, ANIM_FALL);
+	  }
+	else if y_speed <= -2.0 
+    {
+	   animation_play(animator, ANIM_SPRING);
 	}
+	
+	}
+
 }

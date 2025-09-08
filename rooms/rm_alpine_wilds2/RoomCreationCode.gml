@@ -3,8 +3,9 @@
 		//Set stage music and loop points
 		stage_music = BGM_ARBOREAL_2;
 		
-		//Set level name
-		stage_name = "ALPINE WILDS";
+	//Set level name
+		stage_name = "ALPINE ASCENT";
+		stage_subtitle = "THE CERULEAN WILDS";
 		
 		//Set stage act
 		act = 2;

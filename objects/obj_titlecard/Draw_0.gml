@@ -25,15 +25,15 @@
 		}
 	
 		//Draw background of the title card
-		draw_set_color(#48486c);
+		draw_set_color(c_black);
 		draw_rectangle(0,0, global.window_width, global.window_height-offset[0], false);
 	
 		//Draw top part of the card
-		draw_set_color(#9090b4);
+		draw_set_color(c_black);
 		draw_rectangle(offset[3], 0, global.window_width, 48, false);
 	
 		//Draw bottom part of the card
-		draw_set_color(#9090b4);
+		draw_set_color(c_black);
 		draw_rectangle(0, global.window_height-48, global.window_width-offset[3], global.window_height, false);
 	}
 	
@@ -59,6 +59,7 @@
 	draw_set_halign(fa_left);
 	
 	draw_text(128 + offset[2], 64, string(obj_level.stage_name));
+	draw_text(128 + offset[2], 32, string(obj_level.stage_subtitle));
 	draw_text(152 - offset[2], 96, "ACT " + string(obj_level.act));
 	
 	//Done

@@ -2,7 +2,7 @@
 	if(!instance_exists(obj_water)) exit;
 	var tileLayer, layerList;
 	
-	layerList = ["PlaneFront", "PlaneBack"]
+	layerList = ["PlaneFront", "Objects", "BackgroundObject", "Assets", "PlaneBack"]
 
 	for(var i = 0; i < array_length(layerList); i++)
 	{

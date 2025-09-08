@@ -2,11 +2,11 @@ function player_handle_physics(){
 	//Setup physics table for each character
 	var physics_table =
 	{
-		accel : [0.046875, 0.046875, 0.046875],
-		fric : [0.046875, 0.046875, 0.046875],
+		accel : [0.046875, 0.036875, 0.036875],
+		fric : [0.036875, 0.036875, 0.056875],
 		grav : [0.21875, 0.21875, 0.21875],
-		top_speed : [6.0, 6.0, 6.0],
-		jump_strength : [6.5, 6.5, 6.0],
+		top_speed : [8.0, 7.0, 7.0],
+		jump_strength : [6.5, 7.0, 6.0],
 		jump_release : [4.0, 4.0, 4.0],
 		slope_up : [0.078125, 0.078125, 0.078125],
 		slope_down : [0.3125, 0.3125, 0.3125]
@@ -44,12 +44,12 @@ function player_handle_physics(){
 	//Underwater multiplier
     if(underwater) 
 	{
-        top_speed *= 0.5;
-        x_accel *= 0.5;
-        friction_speed *= 0.5;
-		jump_release *= 0.5;
+        top_speed *= 0.75;
+        x_accel *= 0.75;
+        friction_speed *= 0.75;
+		jump_release *= 0.50;
 		
 		//This one isn't a multiplier
-		jump_strength -= 3.0;
+		jump_strength -= 2.0;
     }
 }

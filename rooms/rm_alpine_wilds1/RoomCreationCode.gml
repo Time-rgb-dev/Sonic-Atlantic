@@ -4,7 +4,8 @@
 		stage_music = BGM_ARBOREAL_1;
 		
 		//Set level name
-		stage_name = "ALPINE WILDS";
+		stage_name = "ALPINE ASCENT";
+		stage_subtitle = "THE CERULEAN WILDS";
 		
 		//Set stage act
 		act = 1;

@@ -38,14 +38,14 @@
 		draw_set_alpha(1);
 		
 		//Wave text!
-		var DevText = string_upper("**Welcome to dev hell!**");
+		var DevText = string_upper("**Dev menu!**");
 		for(var i = 0; i < string_length(DevText); i++)
 			draw_text((sw/2)+(8*i)-8*string_length(DevText)/2, (sh/2)-64+(8*dsin((current_time/4)+8*i)), string_char_at(DevText , i+1));
 			
 		//Normal text
 		draw_text(sw/2, (sh/2)-16, string_upper("Prensetation"));
 		draw_text(sw/2, (sh/2)-8, string_upper("Level Select"));
-		draw_text(sw/2, (sh/2), string_upper("Every Room"));
+		draw_text(sw/2, (sh/2), string_upper("Room Select"));
 		draw_text(sw/2, (sh/2)+8, string_upper("Exit"));
 		break;
 		

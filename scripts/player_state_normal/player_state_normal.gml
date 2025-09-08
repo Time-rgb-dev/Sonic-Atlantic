@@ -15,18 +15,10 @@ function player_state_normal(){
 	//Value for the animation
 	var anim = ANIM_STAND;
 	
+
 	//Default animation:
-	if (ground)
-	{
+	
 		anim = ANIM_STAND;
-	}
-	else
-	{
-		if(!animation_is_playing(animator, ANIM_BREATHE))
-		{
-			anim = ANIM_WALK;
-		}
-	}
 		
 	//Walking animation:
 	if(abs(ground_speed) > 0 && abs(ground_speed) <= 6)
@@ -74,7 +66,7 @@ function player_state_normal(){
 	switch(character)
 	{
 		case CHAR_SONIC:
-			if(idle_timer > 160)
+			if(idle_timer > 750)
 			{
 				anim = ANIM_WAIT;	
 			}
@@ -95,6 +87,15 @@ function player_state_normal(){
 		break;
 	}
 	
+	
+
+if !ground
+{
+		if(!animation_is_playing(animator, ANIM_BREATHE) and y_speed >= 2.0)
+		{
+			anim = ANIM_FALL;
+		}
+}
 	//Ledge animation
 	if(!line_check(0, hitbox_h + 16, true) && !check_object(0, 0, 1, hitbox_h + 8, true) && ground && ground_speed == 0)
 	{

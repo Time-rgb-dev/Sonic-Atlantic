@@ -17,6 +17,7 @@ function player_states(){
 	//Sonic states:
 	player_state_peelout();
 	player_state_dropdash();
+	player_state_wallslide();
 	
 	//Tails states:
 	player_state_tailsfly();

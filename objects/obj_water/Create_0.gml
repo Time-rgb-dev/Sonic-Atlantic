@@ -6,3 +6,5 @@
 	
 	//Change animation speed
 	image_speed = 0.7;
+	
+	WaterOffset = noone;

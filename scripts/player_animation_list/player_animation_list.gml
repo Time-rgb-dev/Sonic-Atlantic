@@ -2,12 +2,12 @@ function player_animation_list(){
 	switch(global.character)
 	{
 		case CHAR_SONIC:
-		animation_add(ANIM_STAND, spr_sonic_idle, 0.2)
-		animation_add(ANIM_WAIT, spr_sonic_waiting, 4, 5, true, true);
+		animation_add(ANIM_STAND, spr_sonic_idle, 0.14)
+		animation_add(ANIM_WAIT, spr_sonic_wait, 6, 2, true, true);
 		animation_add(ANIM_WALK, spr_sonic_walk, 3, 0, true, true);
-		animation_add(ANIM_RUN, spr_sonic_run, 4, 0, true, true);
+		animation_add(ANIM_RUN, spr_sonic_run, 3, 0, true, true);
 		animation_add(ANIM_MAXRUN, spr_sonic_peelout, 0, 0, true, true);
-		animation_add(ANIM_ROLL, spr_sonic_roll, 0, 0, true, true);
+		animation_add(ANIM_ROLL, spr_sonic_spin, 0, 0, true, true);
 		animation_add(ANIM_LOOKDOWN, spr_sonic_lookdown, 0.4, 0, false, false);
 		animation_add(ANIM_LOOKUP, spr_sonic_lookup, 0.4, 0, false, false);
 		animation_add(ANIM_SPINDASH, spr_sonic_spindash, 0.6, 0, true, false);
@@ -23,6 +23,7 @@ function player_animation_list(){
 		animation_add(ANIM_LEDGE2, spr_sonic_ledge2, 0.1, 0, true, false);
 		animation_add(ANIM_VICTORY, spr_sonic_victory, 0.1, 1, true, false);
 		animation_add(ANIM_DROPDASH, spr_sonic_dropdash, 0.5, 1, true, false);
+		animation_add(ANIM_FALL, spr_sonic_fall, 0.1, 0, false, false);
 		break;
 		
 		case CHAR_TAILS:
@@ -31,7 +32,7 @@ function player_animation_list(){
 		animation_add(ANIM_WALK, spr_tails_walk, 3, 0, true, true);
 		animation_add(ANIM_RUN, spr_tails_run, 2, 0, true, true);
 		animation_add(ANIM_MAXRUN, spr_tails_maxrun, 1, 0, true, true);
-		animation_add(ANIM_ROLL, spr_tails_roll, 0.4, 0, true, false);
+		animation_add(ANIM_ROLL, spr_tails_spin, 0.4, 0, true, false);
 		animation_add(ANIM_LOOKDOWN, spr_tails_lookdown, 0.4, 0, false, false);
 		animation_add(ANIM_LOOKUP, spr_tails_lookup, 0.4, 0, false, false);
 		animation_add(ANIM_SPINDASH, spr_tails_spindash, 0.6, 0, true, false);
@@ -58,7 +59,7 @@ function player_animation_list(){
 		animation_add(ANIM_WALK, spr_knuckles_walk, 3, 0, true, true);
 		animation_add(ANIM_RUN, spr_knuckles_run, 0, 0, true, true);
 		animation_add(ANIM_MAXRUN, spr_knuckles_maxrun, 0, 0, true, true);
-		animation_add(ANIM_ROLL, spr_knuckles_roll, 0, 0, true, true);
+		animation_add(ANIM_ROLL, spr_knuckles_spin, 0, 0, true, true);
 		animation_add(ANIM_LOOKDOWN, spr_knuckles_lookdown, 0.4, 0, false, false);
 		animation_add(ANIM_LOOKUP, spr_knuckles_lookup, 0.4, 0, false, false);
 		animation_add(ANIM_SPINDASH, spr_knuckles_spindash, 0.6, 0, true, false);

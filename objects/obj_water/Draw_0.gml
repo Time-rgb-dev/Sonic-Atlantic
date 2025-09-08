@@ -41,6 +41,13 @@
 	shader_reset();
 	gpu_set_blendenable(true);
 	*/
+	
+		    WaterOffset	= dcos((global.object_timer + 90) / 2 mod 360) * 64;
+
+			var Width = sprite_get_width(spr_water) + 20;
+	
 	//Draw the water horizon
 	for(var i = 0; i < screen_width+2; i++)
-		draw_sprite(sprite_index, image_index, (round(cx/spr_width)*spr_width)+spr_width*i, y);
+		draw_sprite(sprite_index, image_index, (round(cx/spr_width)*spr_width)+spr_width*i + WaterOffset, y);
+		draw_sprite(spr_water_sunrays, 0, (round(cx/spr_width)*spr_width)+spr_width*i - WaterOffset, y);
+		draw_sprite(spr_water_glow, 0, (round(cx/spr_width)*spr_width)+spr_width*i - WaterOffset, y);

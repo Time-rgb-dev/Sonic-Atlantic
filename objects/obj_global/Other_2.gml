@@ -7,8 +7,8 @@
 	global.character = CHAR_SONIC;			//Global value for the character
 	
 	//Screen values
-	global.window_width  = 484;				//Window's horizontal size
-	global.window_height = 302;				//Window's vertical size
+	global.window_width  = 426;				//Window's horizontal size
+	global.window_height = 240;				//Window's vertical size
 	global.window_size   = 3;				//Window size multiplier
 	
 	//keyboard inputs
@@ -16,9 +16,9 @@
     global.down = vk_down;
     global.left = vk_left;
     global.right = vk_right;
-    global.a = ord("A");
-    global.b = ord("S");
-    global.c = ord("D");
+    global.a = ord("Z");
+    global.b = ord("X");
+    global.c = ord("C");
     global.start = vk_enter;
 	
 	//Setup volume
@@ -50,13 +50,13 @@
 	global.ring_extralife = 100;			//Ring threshold for extra life
 	
 	//Customizables variables
-	global.rotation_type = 0;				//This changes player's visual rotation 
+	global.rotation_type = 2;				//This changes player's visual rotation 
 	global.use_battery_rings = false;		//If this is disabled, destroying enemies will spawn flickies instead
 	global.chaotix_monitors = false;		//Changes monitor icons to be like chaotix, monitor icon spins and it turns into dust
 	global.use_peelout = true;				//Flag that allows peel-out ability
 	global.use_dropdash = true;				//Flag that allows dropdash ability
-	global.use_airroll = false;				//Flag that allows rolling while air-borne
-	global.chaotix_dust_effect = false;		//Flag that disables classic spindash/skid dust effect
+	global.use_airroll = true;				//Flag that allows rolling while air-borne
+	global.chaotix_dust_effect = true;		//Flag that disables classic spindash/skid dust effect
 	global.camera_type = 1;					//Vertical camera scrolling type, 0 = Megadrive, 1 = Mania
 	global.knux_camera_smooth = false;		//Flag for using smooth ledge climb camera movement
 	
@@ -87,6 +87,33 @@
 	#macro WINDOW_WIDTH global.window_width
 	#macro WINDOW_HEIGHT global.window_height
 	#macro OBJECT_TIMER global.object_timer
+	
+	// Data Setup
+	
+		// Initialise other variables. Do not edit these
+	global.Character	   = 0;
+	
+    global.ActiveSave      = 0;
+	global.SaveData		   = 0;
+	global.SaveState       = 0;
+	global.StartFullscreen = 0;
+	global.WindowSize	   = 0;
+	global.MusicVolume	   = 0;
+	global.SoundVolume     = 0;
+	global.Score		   = 0;
+	global.TotalRings      = [];
+	global.Lives		   = 0;
+	global.Continues	   = 0;
+    global.Shells          = 0;
+	global.ChromaStones    = 0;
+	global.ZoneID		   = 0;
+	global.StageRoom       = 0;
+	global.GameStartTime   = 0;	
+	global.StarPostData    = [];
+	global.BonusStageData  = [];
+	global.SpecialRingData = [];
+	global.SpecialRingList = [];
+	
 	
 	//Ending event:
 	room_goto_next();
