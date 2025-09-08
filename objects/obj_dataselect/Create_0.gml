@@ -5,8 +5,8 @@
 
 // Zone setup (for starting zone)
 global.ZoneOrder = [
-  rm_alpine_wilds1,
-  rm_alpine_wilds2
+  rm_alpine_ascent1,
+  rm_alpine_ascent2
 ];
 
 

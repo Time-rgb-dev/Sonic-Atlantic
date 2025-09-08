@@ -6,7 +6,7 @@
 	//The lists
 	zone_list = [
 	//["ARBOREAL AGATE", rm_arboreal_agate1, rm_arboreal_agate2],
-	["ALPINE WILDS", rm_alpine_wilds1, rm_alpine_wilds2],
+	["ALPINE ASCENT", rm_alpine_ascent1, rm_alpine_ascent2],
 	];
 	
 	reset_stage_data();
