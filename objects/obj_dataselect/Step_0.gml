@@ -1,6 +1,6 @@
 /// @description Input & selection logic
 
-	// ——— Navigation with hold-repeat ———
+	// input
 	var dir = 0;
 	if (obj_input.LeftPress) dir = -1;
 	if (obj_input.RightPress) dir = +1;
@@ -19,9 +19,9 @@
 	    move_delay = 0;
 	}
 
-	// ——— Confirm with A ———
+	// Select with A
 	if (obj_input.APress && !transitioning) {
-	    //audio_play_sound(sfxMenuSelect, 1, false); // ← Play confirm sound
+	    play_sound(sfxMenuSelect);
 
 	    // No Save
 	    if (slot_index == 0) {	
@@ -32,22 +32,15 @@
 	        global.Score        = 0;
 	        global.ZoneID       = 0;
 	        global.SaveState    = 0;
-
-			
-		
-			
 				transitioning = true;
-				alarm[2] = 50; // delay before going to stage
-
-	 
+				alarm[2] = 50;
 	    }
-
 	    // Save slot
 	    global.ActiveSave = slot_index - 1;
 	    var save = global.SaveData[slot_index];
 
 	    if (save == 0) {
-	        // New Game — go to character select screen
+	        // New Game
 	        global.Lives        = 3;
 	        global.Continues    = 0;
 	        global.ChromaStones = 0;
@@ -57,17 +50,14 @@
 	        global.SaveIsNew    = true;
 			
      // Reset HUD easing
-	 
-
-				
-	        // audio_play_sound(sfxMenuSelect, 1, false); // ← Play back sound
+	        play_sound(sfxMenuBack);
 	        // fade_perform(ModeInto, BlendBlack, 1);
 	         transitioning = true;
-	         alarm[0] = 50; // delay before going back
+	         alarm[0] = 50; 
 			 
 			 
 	    } else {
-	        // LOAD existing
+	        // Load
 	        var data = savedata_load(global.ActiveSave);
 	        global.SaveData[slot_index] = data;
 
@@ -80,7 +70,7 @@
 	            global.Continues      = data[4];
 	            global.SaveState      = data[5];		
 	        } else {
-	            // No save — treat as new game
+	            // No Save
 	            global.Lives        = 3;
 	            global.Continues    = 0;
 	            global.ChromaStones = 0;
@@ -98,20 +88,26 @@
 	            ];
 	        }
 			
-	        //audio_play_sound(sfxMenuSelect, 1, false); // ← Play select sound
+	        play_sound(sfxMenuSelect);
 	         //fade_perform(ModeInto, BlendBlack, 1);
-			
 	         transitioning = true;
-	         alarm[2] = 50; // delay before going to stage
+	         alarm[2] = 50;
 	    }
 	}
+		
+	if obj_input.Down and obj_input.CPress
+	{
+	file_delete("saveslot" + string(slot_index) + ".bin");
+	play_sound(sfxMenuDelete);
+	for (var i = 1; i < slot_count; i++) {
+    global.SaveData[i] = savedata_load(i-1);}
+	}
 
-	// ——— Cancel with B (fades out then returns) ———
+	// Cancel with B
 	if (obj_input.BPress && !transitioning) {
-	   // audio_play_sound(sfxMenuBack, 1, false); // ← Play back sound
-	   // fade_perform(ModeInto, BlendBlack, 1);
+	    play_sound(sfxMenuBack);
 	    transitioning = true;
-	    alarm[1] = 50; // delay before going back
+	    alarm[1] = 50; 
 	}
 
 	// ——— Smooth scroll ———

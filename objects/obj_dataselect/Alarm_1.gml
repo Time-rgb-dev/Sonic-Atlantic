@@ -1,3 +1,3 @@
-/// @description Go to Main Menu
+/// @description Go to title
 
-room_goto(rm_splash_screen);
+room_goto(rm_title);

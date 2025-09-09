@@ -23,7 +23,7 @@ Continues
 SaveState (game clear flag)
 Score (split into 4 values) */
 
-    file_bin_write_byte(File, global.Character); 
+    file_bin_write_byte(File, global.character); 
     file_bin_write_byte(File, global.ZoneID);
     file_bin_write_byte(File, global.ChromaStones); 
     file_bin_write_byte(File, global.Lives);

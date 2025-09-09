@@ -39,7 +39,7 @@
   ],
   "name":"spr_save_zone_icon",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Data Select",
     "path":"folders/Menus/Data Select.yy",
@@ -141,7 +141,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":40,
+    "xorigin":43,
     "yorigin":28,
   },
   "swatchColours":null,

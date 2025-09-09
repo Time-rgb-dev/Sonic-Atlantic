@@ -6,6 +6,7 @@ function init_music_list()
 	//Stage background music:
 	music_add(BGM_ARBOREAL_1, bgm_arboreal_agate1);
 	music_add(BGM_ARBOREAL_2, bgm_arboreal_agate2);
+	music_add(BGM_ALPINE_1, bgm_BackwoodsTrail);
 	
 	//Game jingles:
 	music_add(J_GAME_OVER, j_game_over, 0.00, 0.00, false);
@@ -22,3 +23,5 @@ function init_music_list()
 	#macro J_INVINCIBLE 4
 	#macro J_SPEEDSHOE 5
 	#macro J_ACT_CLEAR 6
+	#macro BGM_ALPINE_1 7
+	#macro BGM_ALPINE_2 8

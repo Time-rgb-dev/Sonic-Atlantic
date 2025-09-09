@@ -39,7 +39,7 @@
 	}
 	else
 	{
-		fade_to_room(rm_stage_select, 1);
+		fade_to_room(rm_title, 1);
 		
 		ease_timer[2] = approach(ease_timer[2], 1, 0.008);
 		

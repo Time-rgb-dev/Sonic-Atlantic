@@ -20,5 +20,5 @@
  
  // Text 
  
-	quotes = ["PRESS ANYTHING!"];
+	quotes = ["WELCOME TO SAVIOR ISLAND!"];
 	quote_index = irandom(array_length(quotes)-1);

@@ -4,7 +4,7 @@
 	global.dev_mode = true;					//Flag for developer mode, which allows you to use dev commands, don't forget to turn this off when releasing the game
 	
 	//Character globals
-	global.character = CHAR_SONIC;			//Global value for the character
+	global.character = 0		//Global value for the character
 	
 	//Screen values
 	global.window_width  = 426;				//Window's horizontal size
@@ -50,14 +50,14 @@
 	global.ring_extralife = 100;			//Ring threshold for extra life
 	
 	//Customizables variables
-	global.rotation_type = 2;				//This changes player's visual rotation 
+	global.rotation_type = 1;				//This changes player's visual rotation 
 	global.use_battery_rings = false;		//If this is disabled, destroying enemies will spawn flickies instead
 	global.chaotix_monitors = false;		//Changes monitor icons to be like chaotix, monitor icon spins and it turns into dust
 	global.use_peelout = true;				//Flag that allows peel-out ability
 	global.use_dropdash = true;				//Flag that allows dropdash ability
 	global.use_airroll = true;				//Flag that allows rolling while air-borne
 	global.chaotix_dust_effect = true;		//Flag that disables classic spindash/skid dust effect
-	global.camera_type = 1;					//Vertical camera scrolling type, 0 = Megadrive, 1 = Mania
+	global.camera_type = 2;					//Vertical camera scrolling type, 0 = Megadrive, 1 = Mania
 	global.knux_camera_smooth = false;		//Flag for using smooth ledge climb camera movement
 	
 	//Font setup:
@@ -91,8 +91,7 @@
 	// Data Setup
 	
 		// Initialise other variables. Do not edit these
-	global.Character	   = 0;
-	
+	global.character	   = 0;
     global.ActiveSave      = 0;
 	global.SaveData		   = 0;
 	global.SaveState       = 0;

@@ -16,7 +16,7 @@ if (text_flash_timer > 0) {
 if (obj_input.APress)
 {
     text_flash_timer = 30;
-//audio_sfx_play(sfxMenuSelect, false);
+play_sound(sfxMenuSelect);
 	alarm_set(0, 45);
 						}
 

@@ -5,7 +5,7 @@
 		
 		//Set level name
 		stage_name = "ARBOREAL AGATE";
-		
+		stage_subtitle = "TEST STAGE";		
 		//Set stage act
 		act = 1;
 		

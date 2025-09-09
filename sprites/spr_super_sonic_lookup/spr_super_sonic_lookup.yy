@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Sonic",
-    "path":"folders/Sprites/Player Sprites/Sonic.yy",
+    "name":"Super Sonic",
+    "path":"folders/Sprites/Player Sprites/Super Sonic.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
