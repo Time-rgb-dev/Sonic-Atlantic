@@ -2,4 +2,4 @@
 
 // Go bacc to da data select :)
 
-room_goto(rm_dataselect);
+fade_to_room(rm_dataselect, 5, c_black)

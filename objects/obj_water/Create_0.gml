@@ -5,6 +5,6 @@
 	surf_bg = surface_create(global.window_width, global.window_height);
 	
 	//Change animation speed
-	image_speed = 0.7;
+	image_speed = 1;
 	
 	WaterOffset = noone;

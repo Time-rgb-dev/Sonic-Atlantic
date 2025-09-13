@@ -20,7 +20,7 @@
   "height":224,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"520adf13-70b1-4d36-89ad-73061de31756","blendMode":0,"displayName":"default","isLocked":false,"name":"520adf13-70b1-4d36-89ad-73061de31756","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"520adf13-70b1-4d36-89ad-73061de31756","blendMode":0,"displayName":"default","isLocked":false,"name":"520adf13-70b1-4d36-89ad-73061de31756","opacity":75.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_water_sunrays",
   "nineSlice":null,

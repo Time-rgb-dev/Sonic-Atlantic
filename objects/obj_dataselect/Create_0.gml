@@ -6,6 +6,8 @@ global.ZoneOrder = [
   rm_alpine_ascent2
 ];
 
+fade_in_room(5);
+
 // text setups
 	quotes = ["DATA SELECT!"];
 	quote_index = irandom(array_length(quotes)-1);

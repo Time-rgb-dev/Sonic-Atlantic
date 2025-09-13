@@ -4,5 +4,5 @@
 
 // Go to first zone
 
-room_goto(global.ZoneOrder[0]);
+fade_to_room((global.ZoneOrder[0]), 5, c_black);
 

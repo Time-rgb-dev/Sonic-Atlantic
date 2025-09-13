@@ -30,7 +30,7 @@ for (var i = 0; i < slot_count; i++) {
 	   {
 		// draw slot header
 		draw_set_color(c_white);
-		draw_text(PosX - 4, PosY - 93, string(i));
+		draw_text(PosX - 3, PosY - 93, string(i));
 	   }
 
     // draw save info

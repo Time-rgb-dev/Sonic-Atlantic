@@ -1,3 +1,3 @@
 /// @description Go to title
 
-room_goto(rm_title);
+fade_to_room(rm_title, 5, c_black)

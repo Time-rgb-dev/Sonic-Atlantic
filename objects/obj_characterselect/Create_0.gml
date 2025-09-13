@@ -6,6 +6,8 @@
 // Defaults
 global.character = 0;
 
+fade_in_room(5);
+
 // Character data
 char_count       = 3;
 char_index       = 0; // Actual character selected (0 = Sonic, 1 = Tails, 2 = Knuckles)

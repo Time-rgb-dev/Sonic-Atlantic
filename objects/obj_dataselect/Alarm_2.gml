@@ -1,3 +1,3 @@
 /// @description Go to stage
 
-room_goto(global.ZoneOrder[global.ZoneID]);
+fade_to_room((global.ZoneOrder[global.ZoneID]), 5, c_black);
