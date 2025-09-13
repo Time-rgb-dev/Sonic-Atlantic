@@ -19,7 +19,7 @@ for (var i = 0; i < slot_count; i++) {
     var PosX = middle_x - menu_offset_x + i * slot_spacing;
     var PosY = middle_y;
 
-		// 1) Slot sprite
+		//
 		if (i == 0) {
 		    draw_sprite(spr_save_nosaveslot, (slot_index == 0) ? flash : 0, PosX, PosY);
 		} else {
@@ -28,12 +28,12 @@ for (var i = 0; i < slot_count; i++) {
 
        if (i != 0)
 	   {
-		// --- Draw slot number above each slot ---
+		// draw slot header
 		draw_set_color(c_white);
-		draw_text(PosX, PosY - 90, string(i));
+		draw_text(PosX - 4, PosY - 93, string(i));
 	   }
 
-    // 2) Save data info 
+    // draw save info
     if (i > 0) {
         var s = global.SaveData[i];
         if (is_array(s)) {
@@ -47,16 +47,16 @@ for (var i = 0; i < slot_count; i++) {
             var Char = s[2]; // ChromaStones
 
             // Lives icon and count
-            draw_sprite(spr_hud_life_icons, cid, PosX - 17, PosY);
+            draw_sprite(spr_hud_life_icons, cid, PosX - 18, PosY);
             draw_set_color(c_white);
-            draw_text(PosX + 13, PosY +	8, string(lvs));
+            draw_text(PosX + 8, PosY + 3, string(lvs));
 
-            // ChromaStones icon
+            // Chroma Stones icon
             if (Char >= 0 && Char < sprite_get_number(spr_save_colorstars_icons)) {
                 draw_sprite(spr_save_colorstars_icons, Char, PosX, PosY + 24);
             }
         } else {
-            // Empty slot = draw "New Game" icon
+            // empty slot
             draw_sprite(spr_save_zone_icon, 0, PosX, PosY - 47);
         }
     }

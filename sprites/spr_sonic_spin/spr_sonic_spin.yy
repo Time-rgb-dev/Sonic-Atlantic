@@ -26,7 +26,7 @@
   "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"aaa9de62-add3-4dae-84cd-fb1c392d785f","blendMode":0,"displayName":"default","isLocked":false,"name":"aaa9de62-add3-4dae-84cd-fb1c392d785f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"7586a260-55f8-4133-8724-0613d4e06742","blendMode":0,"displayName":"default","isLocked":false,"name":"7586a260-55f8-4133-8724-0613d4e06742","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_sonic_spin",
   "nineSlice":null,

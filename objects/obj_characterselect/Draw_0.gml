@@ -6,7 +6,7 @@ var middlex = WINDOW_WIDTH / 2;
 var middley = WINDOW_HEIGHT / 2;
 
 draw_set_font(global.text_random);
-draw_text(middlex - 5, camera_get_view_y(view_camera[0]) + 24, "CHARACTER_SELECT");
+draw_text(middlex - 60, camera_get_view_y(view_camera[0]) + 24, "CHARACTER SELECT");
 
 // Carousel geometry
 var RadiusX = 160;
@@ -43,5 +43,4 @@ for (var i = 0; i < char_count; i++) {
         draw_text(PosX, PosY + 80, char_names[i]);
     }
 }
-draw_set_valign(fa_middle);
 

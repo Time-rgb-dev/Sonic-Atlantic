@@ -3,7 +3,7 @@
   "%Name":"spr_water_sunrays",
   "bboxMode":0,
   "bbox_bottom":107,
-  "bbox_left":7,
+  "bbox_left":0,
   "bbox_right":760,
   "bbox_top":0,
   "collisionKind":1,
@@ -13,14 +13,14 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"","%Name":"9183bf67-1a75-41f8-8006-ca86cc82493a","name":"9183bf67-1a75-41f8-8006-ca86cc82493a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e4bb145f-2d71-4500-b558-875256fbe214","name":"e4bb145f-2d71-4500-b558-875256fbe214","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":224,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"818ebc47-c5ff-4b79-9455-43f61c49e62e","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"818ebc47-c5ff-4b79-9455-43f61c49e62e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"aa309093-6aa0-4769-af48-af9ef24a6812","blendMode":0,"displayName":"default","isLocked":false,"name":"aa309093-6aa0-4769-af48-af9ef24a6812","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"520adf13-70b1-4d36-89ad-73061de31756","blendMode":0,"displayName":"default","isLocked":false,"name":"520adf13-70b1-4d36-89ad-73061de31756","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_water_sunrays",
   "nineSlice":null,
@@ -50,7 +50,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":2.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -74,6 +74,9 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9183bf67-1a75-41f8-8006-ca86cc82493a","path":"sprites/spr_water_sunrays/spr_water_sunrays.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"50d6ce4a-b63d-417e-a2a4-25df1d7e4c71","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e4bb145f-2d71-4500-b558-875256fbe214","path":"sprites/spr_water_sunrays/spr_water_sunrays.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f87668f3-9d89-4c0c-8e06-e8d810f870ea","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
