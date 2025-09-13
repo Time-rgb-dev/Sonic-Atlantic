@@ -66,7 +66,7 @@ function player_state_normal(){
 	switch(character)
 	{
 		case CHAR_SONIC:
-			if(idle_timer > 750)
+			if(idle_timer > 280)
 			{
 				anim = ANIM_WAIT;	
 			}
