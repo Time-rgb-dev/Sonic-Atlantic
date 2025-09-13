@@ -4,6 +4,12 @@ function player_collision(){
 	{
 		x += y_dir;	
 		y -= x_dir;
+		
+		if hold_left and !ground and facing = -1
+		{
+		 state = ST_WALLSLIDE
+		}
+		
 	}
 	
 	//Right wall collision
@@ -11,6 +17,13 @@ function player_collision(){
 	{
 		x -= y_dir;	
 		y += x_dir;
+		
+		
+		if hold_right and !ground and facing = 1
+		{
+			state = ST_WALLSLIDE
+		}
+		
 	}
 	
 	//Reset ceiling flag

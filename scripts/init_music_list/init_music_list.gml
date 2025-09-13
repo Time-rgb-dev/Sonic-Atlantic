@@ -6,7 +6,9 @@ function init_music_list()
 	//Stage background music:
 	music_add(BGM_ARBOREAL_1, bgm_arboreal_agate1);
 	music_add(BGM_ARBOREAL_2, bgm_arboreal_agate2);
-	music_add(BGM_ALPINE_1, bgm_BackwoodsTrail);
+	music_add(BGM_ALPINE_1, bgm_alpine_ascent1);
+	music_add(BGM_ALPINE_2, bgm_alpine_ascent2);
+	
 	
 	//Game jingles:
 	music_add(J_GAME_OVER, j_game_over, 0.00, 0.00, false);

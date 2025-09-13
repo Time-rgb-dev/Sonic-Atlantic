@@ -2,7 +2,7 @@ function player_handle_physics(){
 	//Setup physics table for each character
 	var physics_table =
 	{
-		accel : [0.046875, 0.043875, 0.43875],
+		accel : [0.046875, 0.043875, 0.043875],
 		fric : [0.036875, 0.036875, 0.056875],
 		grav : [0.21875, 0.21875, 0.21875],
 		top_speed : [8.0, 7.0, 7.0],
@@ -52,4 +52,11 @@ function player_handle_physics(){
 		//This one isn't a multiplier
 		jump_strength -= 2.0;
     }
+	
+	// Wall slide multiplier
+	//if (state = ST_WALLSLIDE)
+	//{
+	//	y_accel *= 0.50;
+	//}
+	
 }

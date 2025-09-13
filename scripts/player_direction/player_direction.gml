@@ -13,7 +13,10 @@ function player_direction(){
 		//Airborn events:
 		{
 			//Change direction depending on input press:
-			if(input_press != 0) facing = input_press;
+			if(input_press != 0) 
+			{
+				facing = input_press;
+			}
 		}
 	}
 	

@@ -1,7 +1,7 @@
 	with(obj_level)
 	{
 		//Set stage music and loop points
-		stage_music = BGM_ARBOREAL_2;
+		stage_music = BGM_ALPINE_2;
 		
 	//Set level name
 		stage_name = "ALPINE ASCENT";

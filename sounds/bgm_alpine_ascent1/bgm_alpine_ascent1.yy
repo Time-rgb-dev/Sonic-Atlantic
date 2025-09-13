@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"bgm_alpine_ascent1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":1,
+  "conversionMode":0,
+  "duration":86.36082,
+  "name":"bgm_alpine_ascent1",
+  "parent":{
+    "name":"Stage Music",
+    "path":"folders/Sounds/Music/Stage Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"bgm_alpine_ascent1.mp3",
+  "type":1,
+  "volume":1.0,
+}

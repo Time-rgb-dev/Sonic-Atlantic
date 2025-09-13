@@ -24,6 +24,7 @@ function player_animation_list(){
 		animation_add(ANIM_VICTORY, spr_sonic_victory, 0.1, 1, true, false);
 		animation_add(ANIM_DROPDASH, spr_sonic_dropdash, 0.5, 1, true, false);
 		animation_add(ANIM_FALL, spr_sonic_fall, 0.1, 0, false, false);
+		animation_add(ANIM_WALLSLIDE, spr_sonic_wallslide, 0.1, 0, false, false);
 		break;
 		
 		case CHAR_TAILS:

@@ -7,6 +7,7 @@
 	zone_list = [
 	//["ARBOREAL AGATE", rm_arboreal_agate1, rm_arboreal_agate2],
 	["ALPINE ASCENT", rm_alpine_ascent1, rm_alpine_ascent2],
+	["ARBOREAL AGATE", rm_arboreal_agate1, rm_arboreal_agate2]
 	];
 	
 	reset_stage_data();

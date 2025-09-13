@@ -31,7 +31,7 @@ function player_state_jump(){
 			
 		//Detach player off the ground and change state
 		ground = false;
-		state = ST_JUMP
+		state = ST_JUMP;
 			
 		//Change jump animation duration
 		jump_anim_speed = floor(max(0, 4-abs(ground_speed)));
@@ -52,15 +52,18 @@ function player_state_jump(){
 		animation_play(animator, ANIM_FALL);
 		
 		//Jump off the terrain
-		y_speed -= jump_strength;	
-		x_speed -= 6 * facing
+		y_speed = -7;
+		x_speed = -6 * facing;
+		//
+		
+		facing = -facing;
 			
 		//Trigger the jump flag
 		jump_flag = true;
 			
 		//Detach player off the ground and change state
 		ground = false;
-		state = ST_JUMP
+		state = ST_JUMP;
 			
 		//Change jump animation duration
 		jump_anim_speed = floor(max(0, 4-abs(ground_speed)));

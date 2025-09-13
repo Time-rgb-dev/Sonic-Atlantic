@@ -10,14 +10,22 @@ function player_wall_stoppers(){
 			if(ground)ground_speed = 0;
 			x_speed = 0;
 			glide_speed = 0;
+			if hold_left and !ground and facing = -1
+		{
+		 state = ST_WALLSLIDE
 		}
-			
+		}
+		
 	
 		//Right Wall
 		if(check_object(wall_w+1, hitbox_h, 0, hitbox_h) && (x - wall_w) + xprevious - x >= object.bbox_right && spd < 0){
 			if(ground)ground_speed = 0;
 			x_speed = 0;
 			glide_speed = 0;
+			if hold_right and !ground and facing = 1
+		{
+		 state = ST_WALLSLIDE
+		}
 		}
 	}
 
