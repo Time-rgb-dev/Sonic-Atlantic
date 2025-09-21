@@ -1,7 +1,7 @@
 
 
 		// Calculate distances
-	var Angle = image_angle++;
+	var Angle = global.object_timer * -7.5;
 	
 	
 draw_sprite(spr_pinwheel_base, 0, x, y);

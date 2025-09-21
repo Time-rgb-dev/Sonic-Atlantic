@@ -9,8 +9,8 @@
   "name":"obj_battery_ring",
   "overriddenProperties":[],
   "parent":{
-    "name":"Rings",
-    "path":"folders/Objects/Stage Objects/Common Objects/Rings.yy",
+    "name":"Callable",
+    "path":"folders/Objects/Stage Objects/Common Objects/Callable.yy",
   },
   "parentObjectId":null,
   "persistent":false,

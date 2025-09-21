@@ -4,7 +4,7 @@
 	event_inherited();
 	
 	//Vertical scroll factor
-	var v_scroll = 0.95;
+	var v_scroll = 1.0;
 	
 	//Add backgrounds
 	add_background(spr_bg_bridge_sky, 0, 0.97, v_scroll, 0, 0, 0, 0);

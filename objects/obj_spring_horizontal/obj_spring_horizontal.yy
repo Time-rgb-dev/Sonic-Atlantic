@@ -10,8 +10,8 @@
   "name":"obj_spring_horizontal",
   "overriddenProperties":[],
   "parent":{
-    "name":"Springs",
-    "path":"folders/Objects/Stage Objects/Common Objects/Springs.yy",
+    "name":"Common Objects",
+    "path":"folders/Objects/Stage Objects/Common Objects.yy",
   },
   "parentObjectId":{
     "name":"par_solid_object",

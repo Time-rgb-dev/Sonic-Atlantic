@@ -4,7 +4,7 @@ function player_control(){
 	var movement = hold_right - hold_left;
 	
 	//Ground movement:
-	if(ground)
+	if(ground) //and state != ST_GRIND
 	{
 		//Slope influence
 		if(abs(ground_speed) > 0.125 || control_lock > 0) ground_speed -= 0.125*dsin(ground_angle);

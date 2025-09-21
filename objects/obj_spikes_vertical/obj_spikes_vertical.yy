@@ -8,8 +8,8 @@
   "name":"obj_spikes_vertical",
   "overriddenProperties":[],
   "parent":{
-    "name":"Spikes",
-    "path":"folders/Objects/Stage Objects/Common Objects/Spikes.yy",
+    "name":"Common Objects",
+    "path":"folders/Objects/Stage Objects/Common Objects.yy",
   },
   "parentObjectId":{
     "name":"par_solid_object",

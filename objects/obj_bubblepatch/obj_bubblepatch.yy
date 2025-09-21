@@ -9,8 +9,8 @@
   "name":"obj_bubblepatch",
   "overriddenProperties":[],
   "parent":{
-    "name":"Water",
-    "path":"folders/Objects/Stage Objects/Common Objects/Water.yy",
+    "name":"Common Objects",
+    "path":"folders/Objects/Stage Objects/Common Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

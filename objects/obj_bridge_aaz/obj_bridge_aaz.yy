@@ -40,8 +40,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bridgeaaz1",
-    "path":"sprites/spr_bridgeaaz1/spr_bridgeaaz1.yy",
+    "name":"spr_bridge_aaz",
+    "path":"sprites/spr_bridge_aaz/spr_bridge_aaz.yy",
   },
   "spriteMaskId":null,
   "visible":true,

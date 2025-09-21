@@ -10,8 +10,8 @@
   "name":"obj_drown_bubble",
   "overriddenProperties":[],
   "parent":{
-    "name":"Water",
-    "path":"folders/Objects/Stage Objects/Common Objects/Water.yy",
+    "name":"Callable",
+    "path":"folders/Objects/Stage Objects/Common Objects/Callable.yy",
   },
   "parentObjectId":null,
   "persistent":false,

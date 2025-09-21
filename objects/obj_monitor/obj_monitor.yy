@@ -11,8 +11,8 @@
   "name":"obj_monitor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Monitor",
-    "path":"folders/Objects/Stage Objects/Common Objects/Monitor.yy",
+    "name":"Common Objects",
+    "path":"folders/Objects/Stage Objects/Common Objects.yy",
   },
   "parentObjectId":{
     "name":"par_solid_object",

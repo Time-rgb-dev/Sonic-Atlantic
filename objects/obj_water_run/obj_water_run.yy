@@ -10,8 +10,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_solid","path":"objects/par_solid/par_solid.yy",},"propertyId":{"name":"collision_type","path":"objects/par_solid/par_solid.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Semi Solid\"",},
   ],
   "parent":{
-    "name":"Water",
-    "path":"folders/Objects/Stage Objects/Common Objects/Water.yy",
+    "name":"Callable",
+    "path":"folders/Objects/Stage Objects/Common Objects/Callable.yy",
   },
   "parentObjectId":{
     "name":"par_solid",

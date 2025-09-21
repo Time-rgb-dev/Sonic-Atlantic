@@ -10,8 +10,8 @@
   "name":"obj_monitor_icon",
   "overriddenProperties":[],
   "parent":{
-    "name":"Monitor",
-    "path":"folders/Objects/Stage Objects/Common Objects/Monitor.yy",
+    "name":"Callable",
+    "path":"folders/Objects/Stage Objects/Common Objects/Callable.yy",
   },
   "parentObjectId":null,
   "persistent":false,
