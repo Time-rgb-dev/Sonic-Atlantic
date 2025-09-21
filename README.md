@@ -1,4 +1,4 @@
-# Harmony Framework Plus
+# Sonic Atlantic, Made in Harmony Framework +
 
 # NOTICE!!
 This build is beta at the moment, you can make a fangame in this all of essential features are done, use it at your own risk. [Current version: 0.9 - Stable]
