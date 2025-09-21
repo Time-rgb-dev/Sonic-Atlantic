@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_checkpoint",
+  "%Name":"obj_awz_bg",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_checkpoint",
+  "name":"obj_awz_bg",
   "overriddenProperties":[],
   "parent":{
-    "name":"Common Objects",
-    "path":"folders/Objects/Stage Objects/Common Objects.yy",
+    "name":"Alpine Ascent",
+    "path":"folders/Objects/Stage Objects/Alpine Ascent.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"par_background",
+    "path":"objects/par_background/par_background.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_checkpoint_editor",
-    "path":"sprites/spr_checkpoint_editor/spr_checkpoint_editor.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

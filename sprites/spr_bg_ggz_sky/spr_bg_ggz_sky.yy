@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Alpine Ascent",
-    "path":"folders/Sprites/Stage Sprites/Alpine Ascent.yy",
+    "name":"bg sprites",
+    "path":"folders/Sprites/Stage Sprites/Alpine Ascent/bg sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

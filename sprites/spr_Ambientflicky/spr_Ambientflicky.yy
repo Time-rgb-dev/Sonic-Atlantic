@@ -49,8 +49,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"Harmony Framework Plus",
-    "path":"Harmony Framework Plus.yyp",
+    "name":"Sprites",
+    "path":"folders/Sprites/Stage Sprites/Alpine Ascent/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

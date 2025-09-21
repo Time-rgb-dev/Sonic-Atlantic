@@ -6,7 +6,7 @@
 	event_user(mode);
 	
 	//Set position
-	camera_x = clamp(target_x + shift_x, limit_left + center_x, limit_right - center_x);
+	camera_x = clamp(target_x + shift_x + look_pan, limit_left + center_x, limit_right - center_x);
 	camera_y = clamp(target_y + shift_y + look_shift + 16, limit_top + center_y, limit_bottom - center_y);
 	
 	//Scroll the room

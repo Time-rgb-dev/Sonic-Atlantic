@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"AAZ1BGMOUNTAIN",
+  "%Name":"spr_bg_aaz1_mountain",
   "bboxMode":0,
   "bbox_bottom":244,
   "bbox_left":107,
@@ -23,19 +23,19 @@
     {"$GMImageLayer":"","%Name":"e5973e6b-d6a8-4422-bcad-7bc610b1eab6","blendMode":0,"displayName":"Layer 3","isLocked":false,"name":"e5973e6b-d6a8-4422-bcad-7bc610b1eab6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"47cbf014-80e0-4c94-ac40-4ac5c7c71fb5","blendMode":0,"displayName":"Layer 4","isLocked":false,"name":"47cbf014-80e0-4c94-ac40-4ac5c7c71fb5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
-  "name":"AAZ1BGMOUNTAIN",
+  "name":"spr_bg_aaz1_mountain",
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Alpine Ascent",
-    "path":"folders/Sprites/Stage Sprites/Alpine Ascent.yy",
+    "name":"bg sprites",
+    "path":"folders/Sprites/Stage Sprites/Alpine Ascent/bg sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"AAZ1BGMOUNTAIN",
+    "%Name":"spr_bg_aaz1_mountain",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -59,7 +59,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"AAZ1BGMOUNTAIN",
+    "name":"spr_bg_aaz1_mountain",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -73,7 +73,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"87edca48-f71a-4c68-a5c8-2fc53fad698b","path":"sprites/AAZ1BGMOUNTAIN/AAZ1BGMOUNTAIN.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"87edca48-f71a-4c68-a5c8-2fc53fad698b","path":"sprites/spr_bg_aaz1_mountain/spr_bg_aaz1_mountain.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"0d68f863-aadd-4c31-b3ea-056974e1b50b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Alpine Ascent",
-    "path":"folders/Sprites/Stage Sprites/Alpine Ascent.yy",
+    "name":"Sprites",
+    "path":"folders/Sprites/Stage Sprites/Alpine Ascent/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -29,52 +29,6 @@
 	//Vertical camera movement while player is airborn:
 	if(v_lag = 0)
 	{
-		switch(global.camera_type)
-		{
-			case 0: //Mega drive games camera
-				//Vertical scroll speed during ground movement:
-				var y_scroll_speed;
-	
-				//Get vertical y speed:
-				y_scroll_speed = 2 + max(abs(target.ground_speed * dsin(target.ground_angle)), 4)
-		
-				//Vertical scroll on the ground:
-				if(instance_exists(obj_bubble_shield) && obj_bubble_shield.shield_state = 0 || !instance_exists(obj_bubble_shield))
-				{
-					//Scroll camera upwards:
-					if(target.y < target_y && target.ground && target.state != ST_KNUXSLIDE) 
-					{
-						target_y = max(target_y - min(y_scroll_speed, y_speed), target.y - roll_offset);
-					}
-					
-					//Scroll camera downwards:
-					if(target.y > target_y && target.ground && target.state != ST_KNUXSLIDE) 
-					{
-						target_y = min(target_y + min(y_scroll_speed, y_speed), target.y - roll_offset);
-					}
-				}
-		
-				//Scroll camera upwards:
-				if(target.y < target_y - 32)
-				{
-					if(!target.ground || target.state = ST_KNUXSLIDE)
-					{
-						target_y = max(target_y - y_speed, target.y + 32);
-					}
-				}
-		
-				//Scroll camera downwards:
-				if(target.y > target_y + 32)
-				{
-					if(!target.ground || target.state = ST_KNUXSLIDE)
-					{
-						target_y = min(target_y + y_speed, target.y - 32);
-					}
-				}
-			break;
-			
-			
-			case 1: 
 				//Sonic mania camera
 				//That mania smooth focusing
 				if(!target.ground || target.state = ST_KNUXSLIDE)
@@ -111,8 +65,6 @@
 					{
 						target_y = min(target_y + y_speed, target.y - ground_offset - roll_offset);
 					}
-				}
-			break;
 		}
 	}
 	
@@ -134,18 +86,19 @@
 	}
 		
 	//Shifting time
-	if(look_timer <= -120)
+	if(look_timer <= -60)
 	{
-		look_shift = approach(look_shift, -104, 2);
+		look_shift = lerp(look_shift, -104, 0.1);
 	}
 	
-	if(look_timer >= 120)
+	if(look_timer >= 60)
 	{
-		look_shift = approach(look_shift, 88, 2);
+		look_shift = lerp(look_shift, 88, 0.1);
 	}
 	
 	//Shift back
 	if(look_timer = 0)
 	{
-		look_shift = approach(look_shift, 0, 2);
+		look_shift = lerp(look_shift, 0, 0.1);
 	}
+	

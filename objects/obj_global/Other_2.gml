@@ -36,7 +36,7 @@
 	global.stage_timer = 0;					//Global variable for stage timer
 	global.rings = 0;						//Global variable for rings
 	global.life = 3;						//Global variable for life
-	global.title_card = true;				//Flag that allows title card to be triggered, used in dev
+	global.title_card = false;				//Flag that allows title card to be triggered, used in dev
 	global.emeralds = [false, false, false, false, false, false, false];				//List of active emeralds
 	global.col_tile = ["CollisionMain", "CollisionSemi", "CollisionA", "CollisionB"];	//List of collision layers
 	
@@ -50,7 +50,7 @@
 	global.ring_extralife = 100;			//Ring threshold for extra life
 	
 	//Customizables variables
-	global.rotation_type = 1;				//This changes player's visual rotation 
+	global.rotation_type = 2;				//This changes player's visual rotation 
 	global.use_battery_rings = false;		//If this is disabled, destroying enemies will spawn flickies instead
 	global.chaotix_monitors = true;		//Changes monitor icons to be like chaotix, monitor icon spins and it turns into dust
 	global.use_peelout = true;				//Flag that allows peel-out ability
