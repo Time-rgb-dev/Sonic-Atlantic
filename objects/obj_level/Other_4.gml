@@ -1,5 +1,6 @@
 /// @description Stage start
 	//Play stage music
+	play_music(stage_ambience, 1);
 	play_music(stage_music, 0);
 	
 	//Reset stage data

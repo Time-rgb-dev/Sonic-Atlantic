@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"bg sprites",
-    "path":"folders/Sprites/Stage Sprites/Alpine Ascent/bg sprites.yy",
+    "name":"Harmony Framework Plus",
+    "path":"Harmony Framework Plus.yyp",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

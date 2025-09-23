@@ -33,6 +33,7 @@ Score (split into 4 values) */
     file_bin_write_byte(File, global.Score div 100     mod 100);
     file_bin_write_byte(File, global.Score div 10000   mod 100);
     file_bin_write_byte(File, global.Score div 1000000 mod 100);
+	file_bin_write_byte(File, global.shells);
 
 
     file_bin_close(File);

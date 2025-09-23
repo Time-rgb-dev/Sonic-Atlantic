@@ -1,0 +1,38 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"tile_tsz",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"tile_tsz",
+  "out_columns":51,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Twilight Sanctum",
+    "path":"folders/Tile Sets/Twilight Sanctum.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"tex_twilightsanctum_tile",
+    "path":"sprites/tex_twilightsanctum_tile/tex_twilightsanctum_tile.yy",
+  },
+  "spriteNoExport":true,
+  "textureGroupId":{
+    "name":"ArborealAgate",
+    "path":"texturegroups/ArborealAgate",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":2560,
+}

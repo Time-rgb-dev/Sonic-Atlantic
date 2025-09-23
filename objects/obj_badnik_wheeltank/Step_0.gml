@@ -22,12 +22,6 @@
 		y -= 1;
 	}
 
-	// Push badnik upwards
-	while(!collision_line_check(0, 16,,, true) && collision_line_check(0, 32,,, true))
-	{
-		y += 1;
-	}
-
 	// Check for two conditions for the badnik turning:
 	// Condition 1: Badnik is colliding with wall in its movement direction in the middle
 	// Condition 2: Badnik has no ground underneath it/slope for it is too steep

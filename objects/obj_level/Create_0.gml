@@ -7,8 +7,9 @@
 	//				 **DEFAULT STAGE SETUP**			  //
 	//====================================================//
 	
-	//Set stage music and loop points
+	//Set stage music and ambience and loop points
 	stage_music = noone;
+	stage_ambience = noone;
 		
 	//Set level name
 	stage_name = "EMPTY LEVEL";

@@ -5,7 +5,7 @@ function player_collision(){
 		x += y_dir;	
 		y -= x_dir;
 		
-		if hold_left and !ground and facing = -1
+		if hold_left and !ground and facing = -1 and character == CHAR_SONIC
 		{
 		 state = ST_WALLSLIDE
 		}
@@ -19,7 +19,7 @@ function player_collision(){
 		y += x_dir;
 		
 		
-		if hold_right and !ground and facing = 1
+		if hold_right and !ground and facing = 1 and character == CHAR_SONIC
 		{
 			state = ST_WALLSLIDE
 		}

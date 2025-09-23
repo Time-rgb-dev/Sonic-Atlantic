@@ -7,8 +7,8 @@
 	global.character = 0		//Global value for the character
 	
 	//Screen values
-	global.window_width  = 484;		//484		//Window's horizontal size
-	global.window_height = 272;		//272		//Window's vertical size
+	global.window_width  = 426;	  	// 426 // 484		            //Window's horizontal size
+	global.window_height = 240;		// 240 // 224 //272 //302		//Window's vertical size
 	global.window_size   = 3;				//Window size multiplier
 	
 	//keyboard inputs
@@ -34,7 +34,8 @@
 	global.object_timer = 0;				//Object pre frame timer, every 60 frames in a 1 second
 	global.score = 0;						//Global variable for score
 	global.stage_timer = 0;					//Global variable for stage timer
-	global.rings = 0;						//Global variable for rings
+	global.rings = 0                        //Global variable for rings
+	global.shells = 0                       //Global variable for rings
 	global.life = 3;						//Global variable for life
 	global.title_card = false;				//Flag that allows title card to be triggered, used in dev
 	global.emeralds = [false, false, false, false, false, false, false];				//List of active emeralds

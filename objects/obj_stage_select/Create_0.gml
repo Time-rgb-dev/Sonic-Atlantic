@@ -7,6 +7,7 @@
 	zone_list = [
 	//["ARBOREAL AGATE", rm_arboreal_agate1, rm_arboreal_agate2],
 	["ALPINE ASCENT", rm_alpine_ascent1, rm_alpine_ascent2],
+	["TWILIGHT SANCTUM", rm_twilight_sanctum1],
 	["ARBOREAL AGATE", rm_arboreal_agate1, rm_arboreal_agate2]
 	];
 	

@@ -35,7 +35,7 @@
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_spring_diagonal_yellow",
     "path":"sprites/spr_spring_diagonal_yellow/spr_spring_diagonal_yellow.yy",

@@ -8,6 +8,10 @@ function init_music_list()
 	music_add(BGM_ARBOREAL_2, bgm_arboreal_agate2);
 	music_add(BGM_ALPINE_1, bgm_alpine_ascent1);
 	music_add(BGM_ALPINE_2, bgm_alpine_ascent2);
+    music_add(BGM_TWILIGHT_1, bgm_twilight_sanctum1);
+	music_add(BGM_TWILIGHT_2, bgm_twilight_sanctum2);
+	
+	music_add(AMB_TWILIGHT_1, amb_twilight_sanctum1);
 	
 	
 	//Game jingles:
@@ -27,3 +31,6 @@ function init_music_list()
 	#macro J_ACT_CLEAR 6
 	#macro BGM_ALPINE_1 7
 	#macro BGM_ALPINE_2 8
+	#macro BGM_TWILIGHT_1 9
+	#macro BGM_TWILIGHT_2 10
+	#macro AMB_TWILIGHT_1 25
