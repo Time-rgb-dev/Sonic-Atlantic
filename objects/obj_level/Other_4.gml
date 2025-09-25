@@ -1,7 +1,10 @@
 /// @description Stage start
 	//Play stage music
+	if stage_ambience
+	{
 	play_music(stage_ambience, 1);
-	play_music(stage_music, 0);
+	}
+	//play_music(stage_music, 0);
 	
 	//Reset stage data
 	global.stage_timer = 0;

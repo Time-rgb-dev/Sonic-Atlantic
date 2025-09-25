@@ -8,7 +8,7 @@ function player_state_peelout(){
 	//Trigger peel out
 	if(state == ST_LOOKUP && press_action && ground && character == CHAR_SONIC)
 	{
-		play_sound(sfx_peelout_charge);
+		play_sound(sfx_cartoon_charge);
 		state = ST_PEELOUT
 		spindash_rev = 0;
 	}
@@ -54,10 +54,11 @@ function player_state_peelout(){
 	if(!hold_up)
 	{
 		//Stop the peelout charge audio
-		audio_stop_sound(sfx_peelout_charge);
+		audio_stop_sound(sfx_cartoon_charge);
 		
 		//Play the release sound
-		play_sound(sfx_peelout_release);
+		play_sound(sfx_cartoon_release);
+		camera_set_lag(40 - spindash_rev);
 		
 		//Set player's speed and back to normal state
 		ground_speed = (2+(spindash_rev / 2.9)) * facing;

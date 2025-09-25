@@ -6,16 +6,19 @@
     if(player_collide_object(C_MAIN) && obj_player.state != ST_KNOCKOUT)
     {
 		//Play the sound
-		play_sound(sfx_ring);
+		play_sound(sfx_shell_collect);
 		
         //Add rings!
         global.shells += 1;    
+		
+		//Create the effect
+        create_effect(x, y, spr_shell_sparkle, 0.2);
         
         //Destroy the ring
         instance_destroy();
     }
 	
-	//Ring physics
+	//Shell physics
 	if(magnet)
 	{
 		//when i steal from the physics guide (:exploding_head:)
@@ -46,7 +49,7 @@
 			magnet = false;
 		}
 	}
-	//Ring loss physics
+	//Shell Loss physics
 	if(ringloss)
 	{
 		x += x_speed;

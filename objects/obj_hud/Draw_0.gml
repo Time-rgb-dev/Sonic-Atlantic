@@ -35,6 +35,8 @@
 	if(global.rings == 0 && global.object_timer mod 20 < 20/2) draw_sprite(spr_hudtext, 4, 16 + offset[2], 40);
 	if(global.stage_timer >= 540000 && global.object_timer mod 20 < 20/2) draw_sprite(spr_hudtext, 3, 16 + offset[1], 24);
 	
+	//Draw shell icon
+	draw_sprite(spr_hud_shell_icon, 0, 23 + offset[3], global.window_height - 36)
 	//Draw life icon
 	draw_sprite(spr_hud_life_icons, global.character, 16 + offset[3], global.window_height - 26);
 	
@@ -47,6 +49,7 @@
 	draw_text(120 + offset[1], 25, string(minute)+" "+(sec > 9 ? "" : "0") + string(sec)+" "+(milsec > 9 ? "" : "0") + string(milsec));
 	draw_text(83 + offset[2], 41, string(global.rings));
 	draw_text(56 + offset[3], global.window_height - 24, (global.life > 9 ? "" : "0") + string(global.life));
+	draw_text(56 + offset[3], global.window_height - 42, (global.shells > 9 ? "" : "0") + string(global.shells));
 	
 	surface_reset_target();
 	
@@ -58,7 +61,7 @@
 		for(var i = 0; i <= 3; i++)
 		{
 			var debug_offset = 0;
-			if(instance_exists(obj_dev)) debug_offset = -128 * obj_dev.debug;
+			if(instance_exists(obj_dev)) debug_offset = -148 * obj_dev.debug;
 			offset[i] = approach(offset[i], debug_offset, 8);	
 		}
 	}

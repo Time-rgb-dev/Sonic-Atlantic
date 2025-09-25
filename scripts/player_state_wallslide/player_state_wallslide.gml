@@ -16,7 +16,7 @@ function player_state_wallslide()
 		state = ST_JUMP;
 	}
 	
-	effect_create_above(spr_dust_effect, x, y, 1, c_white);
+	dust_effect(0);
 	
 	var input_towards_facing = facing ? Input.Right : Input.Left;
 			
