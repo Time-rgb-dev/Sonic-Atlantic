@@ -1,0 +1,3 @@
+/// @description Setup
+
+culling = true;

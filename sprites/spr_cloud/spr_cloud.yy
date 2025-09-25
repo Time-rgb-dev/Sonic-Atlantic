@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Twilight Sanctuary",
-    "path":"folders/Objects/Stage Objects/Twilight Sanctuary.yy",
+    "name":"Twilight Sanctum",
+    "path":"folders/Sprites/Stage Sprites/Twilight Sanctum.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

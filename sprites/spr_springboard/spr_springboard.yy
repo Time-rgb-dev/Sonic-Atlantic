@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"group1",
-    "path":"folders/Sprites/Stage Sprites/Common Objects/group1.yy",
+    "name":"Springramp",
+    "path":"folders/Sprites/Stage Sprites/Common Objects/Springramp.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

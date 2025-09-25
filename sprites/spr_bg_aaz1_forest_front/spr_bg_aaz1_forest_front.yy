@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"spr_bg_aaz1_forest_front",
   "bboxMode":0,
-  "bbox_bottom":178,
+  "bbox_bottom":367,
   "bbox_left":0,
   "bbox_right":1021,
   "bbox_top":10,

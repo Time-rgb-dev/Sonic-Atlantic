@@ -9,8 +9,8 @@
   "name":"obj_bubblepatch",
   "overriddenProperties":[],
   "parent":{
-    "name":"Common Objects",
-    "path":"folders/Objects/Stage Objects/Common Objects.yy",
+    "name":"Harmony Framework Plus",
+    "path":"Harmony Framework Plus.yyp",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -9,8 +9,8 @@
   "name":"obj_ggz_bg",
   "overriddenProperties":[],
   "parent":{
-    "name":"Alpine Ascent",
-    "path":"folders/Objects/Stage Objects/Alpine Ascent.yy",
+    "name":"Harmony Framework Plus",
+    "path":"Harmony Framework Plus.yyp",
   },
   "parentObjectId":{
     "name":"par_background",

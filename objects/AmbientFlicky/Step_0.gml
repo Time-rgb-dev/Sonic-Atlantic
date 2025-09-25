@@ -2,7 +2,7 @@
 // You can write your code in this editor
 // Play animation in sync with all rings
 
-
+/*
 	if object_check_player(ColTrigger)
 	{
 		StartPanicking = true;
@@ -11,7 +11,7 @@
 	if StartPanicking = true
 	{
 		
-	animation_play(sprite_index,[1, 2, 5, 5, 5, 5], 2);
+	
 	
 	if (floor(image_index) == 3)
 	{

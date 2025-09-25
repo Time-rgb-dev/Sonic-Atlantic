@@ -42,8 +42,7 @@
 				y_speed *= -1;
 				ground = false;
 			}
-	        create_effect(x,y, spr_pot_shard_effect, 0.25);
-
+			
 			create_debris(x, y, spr_pot_shard, 1,  0.6, -1,   0, 0.1654)
 			create_debris(x, y, spr_pot_shard, 1,  0.6, -1.5, 0, 0.1654)
 			create_debris(x, y, spr_pot_shard, 1, -0.6, -1,   0, 0.1654)
@@ -52,6 +51,6 @@
 			create_ringdrop(random_range(3, 12));
 			
 			obj_camera.camera_shake = 1;
-			instance_destroy(self);
-		}
+			instance_destroy();
+				}
 	}

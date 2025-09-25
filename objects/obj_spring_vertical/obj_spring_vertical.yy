@@ -11,8 +11,8 @@
   "name":"obj_spring_vertical",
   "overriddenProperties":[],
   "parent":{
-    "name":"Common Objects",
-    "path":"folders/Objects/Stage Objects/Common Objects.yy",
+    "name":"Objects - Common",
+    "path":"folders/Objects - Common.yy",
   },
   "parentObjectId":{
     "name":"par_solid_object",

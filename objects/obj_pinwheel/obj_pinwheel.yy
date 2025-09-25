@@ -8,8 +8,8 @@
   "name":"obj_pinwheel",
   "overriddenProperties":[],
   "parent":{
-    "name":"Alpine Ascent",
-    "path":"folders/Objects/Stage Objects/Alpine Ascent.yy",
+    "name":"Misc",
+    "path":"folders/Objects - Zone Gimmicks/Alpine Ascent/Misc.yy",
   },
   "parentObjectId":null,
   "persistent":false,

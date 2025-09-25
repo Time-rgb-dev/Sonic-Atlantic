@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Alpine Ascent",
-    "path":"folders/Objects/Stage Objects/Alpine Ascent.yy",
+    "path":"folders/Objects - Zone Gimmicks/Alpine Ascent.yy",
   },
   "parentObjectId":{
     "name":"par_solid_object",

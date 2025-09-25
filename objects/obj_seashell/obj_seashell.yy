@@ -9,8 +9,8 @@
   "name":"obj_seashell",
   "overriddenProperties":[],
   "parent":{
-    "name":"Common Objects",
-    "path":"folders/Objects/Stage Objects/Common Objects.yy",
+    "name":"Objects - Common",
+    "path":"folders/Objects - Common.yy",
   },
   "parentObjectId":null,
   "persistent":false,

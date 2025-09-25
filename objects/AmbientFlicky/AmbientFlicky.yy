@@ -9,8 +9,8 @@
   "name":"AmbientFlicky",
   "overriddenProperties":[],
   "parent":{
-    "name":"Alpine Ascent",
-    "path":"folders/Objects/Stage Objects/Alpine Ascent.yy",
+    "name":"Misc",
+    "path":"folders/Objects - Zone Gimmicks/Alpine Ascent/Misc.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Ambientflicky",
-    "path":"sprites/spr_Ambientflicky/spr_Ambientflicky.yy",
+    "name":"spr_flicky_aaz",
+    "path":"sprites/spr_flicky_aaz/spr_flicky_aaz.yy",
   },
   "spriteMaskId":null,
   "visible":true,

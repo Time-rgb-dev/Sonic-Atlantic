@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Arboreal Agate",
-    "path":"folders/Objects/Stage Objects/Arboreal Agate.yy",
+    "path":"folders/Objects - Zone Gimmicks/Arboreal Agate.yy",
   },
   "parentObjectId":null,
   "persistent":false,

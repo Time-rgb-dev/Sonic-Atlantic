@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Bridge Zone",
-    "path":"folders/Objects/Stage Objects/Bridge Zone.yy",
+    "path":"folders/Objects - Zone Gimmicks/Bridge Zone.yy",
   },
   "parentObjectId":{
     "name":"par_solid_object",

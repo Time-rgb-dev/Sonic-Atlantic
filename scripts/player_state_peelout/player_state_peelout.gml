@@ -58,7 +58,7 @@ function player_state_peelout(){
 		
 		//Play the release sound
 		play_sound(sfx_cartoon_release);
-		camera_set_lag(40 - spindash_rev);
+		camera_set_lag(30 - spindash_rev);
 		
 		//Set player's speed and back to normal state
 		ground_speed = (2+(spindash_rev / 2.9)) * facing;

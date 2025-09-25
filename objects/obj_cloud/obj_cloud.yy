@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Twilight Sanctuary",
-    "path":"folders/Objects/Stage Objects/Twilight Sanctuary.yy",
+    "path":"folders/Objects - Zone Gimmicks/Twilight Sanctuary.yy",
   },
   "parentObjectId":null,
   "persistent":false,

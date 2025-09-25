@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Assets",
-    "path":"folders/Objects/Stage Objects/Alpine Ascent/Assets.yy",
+    "path":"folders/Objects - Zone Gimmicks/Alpine Ascent/Assets.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

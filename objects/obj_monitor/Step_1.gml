@@ -69,6 +69,7 @@
 		//Destroyed sprite
 		sprite_index = spr_monitor_broken;
 		
+		
 		//Flip it back
 		image_yscale = 1;
 	}

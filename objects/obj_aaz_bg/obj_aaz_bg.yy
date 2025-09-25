@@ -8,8 +8,8 @@
   "name":"obj_aaz_bg",
   "overriddenProperties":[],
   "parent":{
-    "name":"Alpine Ascent",
-    "path":"folders/Objects/Stage Objects/Alpine Ascent.yy",
+    "name":"Misc",
+    "path":"folders/Objects - Zone Gimmicks/Alpine Ascent/Misc.yy",
   },
   "parentObjectId":{
     "name":"par_background",
