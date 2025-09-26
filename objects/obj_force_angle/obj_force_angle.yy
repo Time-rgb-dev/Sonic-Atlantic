@@ -8,8 +8,8 @@
   "name":"obj_force_angle",
   "overriddenProperties":[],
   "parent":{
-    "name":"Collision Modifiers",
-    "path":"folders/Objects/Stage Objects/Common Objects/Collision Modifiers.yy",
+    "name":"Objects - Technical",
+    "path":"folders/Objects - Technical.yy",
   },
   "parentObjectId":null,
   "persistent":false,

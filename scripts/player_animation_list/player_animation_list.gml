@@ -25,6 +25,9 @@ function player_animation_list(){
 		animation_add(ANIM_DROPDASH, spr_sonic_dropdash, 0.5, 1, true, false);
 		animation_add(ANIM_FALL, spr_sonic_fall, 0.1, 0, false, false);
 		animation_add(ANIM_WALLSLIDE, spr_sonic_wallslide, 0.1, 0, false, false);
+		animation_add(ANIM_CORKSCREW, spr_sonic_corkscrew, 0.5, 0, false, false);
+		animation_add(ANIM_GRIND, spr_sonic_grind, 0.5, 0, true, false);
+		animation_add(ANIM_GRIND_CROUCH, spr_sonic_grind_crouch, 0.5, 2, true, false);
 		break;
 		
 		case CHAR_TAILS:

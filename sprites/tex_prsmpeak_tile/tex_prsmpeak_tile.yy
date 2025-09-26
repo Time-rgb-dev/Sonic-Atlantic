@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"tex_prsmpeak_tile",
   "bboxMode":0,
-  "bbox_bottom":703,
+  "bbox_bottom":813,
   "bbox_left":0,
   "bbox_right":399,
   "bbox_top":0,

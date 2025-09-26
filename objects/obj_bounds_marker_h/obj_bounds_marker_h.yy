@@ -8,8 +8,8 @@
   "name":"obj_bounds_marker_h",
   "overriddenProperties":[],
   "parent":{
-    "name":"Editor",
-    "path":"folders/Objects/Stage Objects/Common Objects/Editor.yy",
+    "name":"Objects - Technical",
+    "path":"folders/Objects - Technical.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -39,6 +39,10 @@
 		
 		//Handle how player changes floor modes:
 		player_mode();	
+		
+		//Handle Rail grinding
+		player_grind();
+		
 	}
 	
 	//Handle how player is controlled:

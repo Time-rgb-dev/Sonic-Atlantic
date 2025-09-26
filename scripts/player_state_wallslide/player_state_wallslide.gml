@@ -15,8 +15,7 @@ function player_state_wallslide()
 	{
 		state = ST_JUMP;
 	}
-	
-	dust_effect(0);
+	create_effect(x - 8 + random_range(0, 16), y - 4, spr_wind_effect, random_range(0.1, 0.9), 1, 0, -4)
 	
 	var input_towards_facing = facing ? Input.Right : Input.Left;
 			

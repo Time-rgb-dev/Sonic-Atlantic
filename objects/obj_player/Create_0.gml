@@ -45,7 +45,9 @@
 	hurt_position = 0;					//Horizontal position of hazard that player has touched
 	spindash_pitch = 0;					//Separate rev value used for spindash pitch
 	idle_timer = 0;						//Timer used for idle animation
-	spindash_dust_frames = 0;			//Used to animate spindash dust frame
+	spindash_dust_frames = 0;		    //Used to animate spindash dust frame
+	grinding = 0;                       //Used to detect railgrinding
+	grind_crouch = 0;                   //...self explanatory.
 	
 	//Check variables:
 	ground = true;						//Check used to check if player is on ground or not

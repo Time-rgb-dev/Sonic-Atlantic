@@ -13,7 +13,7 @@ function player_state_roll(){
 	}
 	
 	//Trigger rolling
-	if(can_roll && hold_down && abs(ground_speed) > 1 && ground)
+	if(can_roll && hold_down && abs(ground_speed) > 1 && ground && !grinding)
 	{
 
 		//Play the rolling animation

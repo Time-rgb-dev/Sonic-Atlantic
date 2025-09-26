@@ -3,7 +3,7 @@ function player_state_skid(){
 	var mov = hold_right - hold_left;
 	
 	//Trigger the state
-	if(state == ST_NORMAL && mov = -sign(ground_speed) && ground && abs(ground_speed) > 4 && sign(ground_speed) == facing && mode == 0 && control_lock == 0)
+	if(state == ST_NORMAL && mov = -sign(ground_speed) && ground && abs(ground_speed) > 4 && sign(ground_speed) == facing && mode == 0 && control_lock == 0 && !grinding)
 	{
 		//Play animation
 		animation_play(animator, ANIM_SKID);

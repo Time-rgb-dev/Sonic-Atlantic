@@ -9,8 +9,8 @@
   "name":"obj_angle_flip",
   "overriddenProperties":[],
   "parent":{
-    "name":"Collision Modifiers",
-    "path":"folders/Objects/Stage Objects/Common Objects/Collision Modifiers.yy",
+    "name":"Objects - Technical",
+    "path":"folders/Objects - Technical.yy",
   },
   "parentObjectId":null,
   "persistent":false,

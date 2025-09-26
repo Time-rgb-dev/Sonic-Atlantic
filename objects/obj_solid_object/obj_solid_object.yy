@@ -6,8 +6,8 @@
   "name":"obj_solid_object",
   "overriddenProperties":[],
   "parent":{
-    "name":"Misc",
-    "path":"folders/Objects/Stage Objects/Common Objects/Misc.yy",
+    "name":"Objects - Technical",
+    "path":"folders/Objects - Technical.yy",
   },
   "parentObjectId":{
     "name":"par_solid_object",

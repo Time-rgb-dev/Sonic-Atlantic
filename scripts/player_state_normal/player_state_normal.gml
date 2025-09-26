@@ -31,7 +31,6 @@ function player_state_normal(){
 			animation_set_duration(animator, (max(0, 8-abs(obj_player.ground_speed))));
 		}
 	}
-		
 	//Running animation:
 	if(abs(ground_speed) >= 6)
 	{
@@ -87,7 +86,12 @@ function player_state_normal(){
 		break;
 	}
 	
-	
+	if grinding
+	{
+		if !grind_crouch
+		{anim = ANIM_GRIND};
+		else anim = ANIM_GRIND_CROUCH;
+	}
 
 if !ground
 {

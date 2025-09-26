@@ -8,8 +8,8 @@
   "name":"obj_s_tube",
   "overriddenProperties":[],
   "parent":{
-    "name":"Misc",
-    "path":"folders/Objects/Stage Objects/Common Objects/Misc.yy",
+    "name":"Objects - Technical",
+    "path":"folders/Objects - Technical.yy",
   },
   "parentObjectId":null,
   "persistent":false,

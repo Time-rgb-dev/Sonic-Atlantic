@@ -2,6 +2,7 @@
 
 collision_flag = false;
 create_effect(x - 8 + random_range(0, 16), y - 4, spr_wind_effect, random_range(0.1, 0.9), 1, 0, -4)
+
 //// Distances
 //var x_diff = obj_player.x - x;
 //var y_diff = obj_player.y - global.object_timer - y; // oscillation is a value which oscillates from 0 to 15 and back on a sine wave once every 88 frames
