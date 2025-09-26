@@ -1,4 +1,6 @@
 /// @description Draw background
+	gpu_set_blendmode(bm_normal);
+	gpu_set_alphatestenable(true)
 	for(var i = 0; i < bg_id; i++)
 	{
 		//Draw the background

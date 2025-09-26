@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_rail_sloped",
+  "%Name":"par_rail_slope",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_rail_sloped",
+  "name":"par_rail_slope",
   "overriddenProperties":[],
   "parent":{
-    "name":"Alpine Ascent",
-    "path":"folders/Objects - Zone Gimmicks/Alpine Ascent.yy",
+    "name":"Parents",
+    "path":"folders/Objects/Stage Objects/Common Objects/Parents.yy",
   },
   "parentObjectId":{
-    "name":"par_rail",
-    "path":"objects/par_rail/par_rail.yy",
+    "name":"par_solid_object",
+    "path":"objects/par_solid_object/par_solid_object.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -38,7 +38,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_rail_editor_slope1",
+    "path":"sprites/spr_rail_editor_slope1/spr_rail_editor_slope1.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
