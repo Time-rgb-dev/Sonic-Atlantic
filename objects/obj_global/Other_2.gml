@@ -7,8 +7,8 @@
 	global.character = 0		//Global value for the character
 	
 	//Screen values
-	global.window_width  = 484;	  	// 426 // 484		            //Window's horizontal size
-	global.window_height = 272;		// 240 // 224 //272 //302		//Window's vertical size
+	global.window_width  = 426;	  	// 426 // 484		            //Window's horizontal size
+	global.window_height = 240;		// 240 // 224 //272 //302		//Window's vertical size
 	global.window_size   = 3;				//Window size multiplier
 	
 	//keyboard inputs

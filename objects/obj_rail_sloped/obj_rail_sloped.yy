@@ -13,8 +13,8 @@
     "path":"folders/Objects - Zone Gimmicks/Alpine Ascent.yy",
   },
   "parentObjectId":{
-    "name":"par_rail",
-    "path":"objects/par_rail/par_rail.yy",
+    "name":"par_solid_object",
+    "path":"objects/par_solid_object/par_solid_object.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -38,7 +38,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_lograil_sloped",
+    "path":"sprites/spr_lograil_sloped/spr_lograil_sloped.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

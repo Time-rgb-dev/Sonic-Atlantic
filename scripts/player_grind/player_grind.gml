@@ -12,6 +12,7 @@ if !grinding
 
 // Grind Effects
 
+
 	movement_allow = false;
 	can_roll = false;
 	
@@ -23,21 +24,21 @@ if !grinding
 	// create dust / sparks
 	create_effect(x + hitbox_w*(0-facing), y + hitbox_h, spr_spark_effect, random_range(0.4, 1.0), 1, 0, random_range(-1.0, 0.0),, 0)
 	
-//// Accelerate to minimum speed
-//  if facing = 1
-//  {
-//	  if ground_speed < 2
-//	  {
-//		  ground_speed = ground_speed + 0.25;
-//	  }
-//  }
-//  else
-//      {
-//		  if ground_speed > -2
-//		  {
-//			  ground_speed = ground_speed - 0.25;
-//		  }
-//	  }
+// Accelerate to minimum speed
+  if facing = 1
+  {
+	  if ground_speed < 2
+	  {
+		  ground_speed = ground_speed + 0.25;
+	  }
+  }
+  else
+      {
+		  if ground_speed > -2
+		  {
+			  ground_speed = ground_speed - 0.25;
+		  }
+	  }
 
     // Lock speed
 	clamp(abs(ground_speed), 3, 17);
@@ -52,6 +53,17 @@ grind_crouch = true;
 }
 else grind_crouch = false;
 
+    
+	
+	
+
+// Spawn Rail Sparks
+
+//if abs(ground_speed) >= 3 and !instance_exists(RailGrindSparks)
+//{
+//instance_create(PosX + RadiusX, PosY + RadiusY, RailGrindSparks);
+//}
+	
 // Exit Grind State
 
 if (!on_object) {grinding = false}; 
