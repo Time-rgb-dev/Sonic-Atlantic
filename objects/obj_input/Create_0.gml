@@ -6,6 +6,8 @@
 	A = keyboard_check((global.a))
 	B = keyboard_check((global.b))
 	C = keyboard_check((global.c))
+	L = keyboard_check((global.l))
+	R = keyboard_check((global.r))
 	Action = A || B || C;
 	Start = keyboard_check((global.start))
 
@@ -17,6 +19,8 @@
 	APress = keyboard_check_pressed((global.a))
 	BPress = keyboard_check_pressed((global.b))
 	CPress = keyboard_check_pressed((global.c))
+	LPress = keyboard_check_pressed((global.l))
+	RPress = keyboard_check_pressed((global.r))
 	ActionPress = APress || BPress || CPress;
 	StartPress = keyboard_check_pressed((global.start))
 	
@@ -34,6 +38,8 @@
 	ARelease = keyboard_check_released((global.a))
 	BRelease = keyboard_check_released((global.b))
 	CRelease = keyboard_check_released((global.c))
+	LRelease = keyboard_check_released((global.l))
+	RRelease = keyboard_check_released((global.r))
 	ActionRelease = ARelease || BRelease || CRelease;
 	StartRelease = keyboard_check_released((global.start))
 	

@@ -89,7 +89,7 @@ function player_state_normal(){
 	if grinding
 	{
 		if !grind_crouch
-		{anim = ANIM_GRIND};
+		{anim = ANIM_GRIND}
 		else anim = ANIM_GRIND_CROUCH;
 	}
 
@@ -125,6 +125,7 @@ if !ground
 			anim = ANIM_PUSH;
 		}
 	}
+	
 	
 	//Play the animations
 	if(!animation_is_playing(animator, ANIM_BREATHE) || animation_has_finished(animator) && animation_is_playing(animator, ANIM_BREATHE))

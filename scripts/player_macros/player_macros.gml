@@ -19,6 +19,8 @@ function player_macros(){
 	#macro ST_KNUXSLIDE 15
 	#macro ST_DROPDASH 16
 	#macro ST_WALLSLIDE 17
+	#macro ST_TWIRL 18
+	#macro ST_FALL 19
 	
 	//Animation macros:
 	#macro ANIM_STAND 0
@@ -46,7 +48,7 @@ function player_macros(){
 	#macro ANIM_TAILSSWIM 22
 	#macro ANIM_TAILSSWIMTIRED 23
 	#macro ANIM_KNUXGLIDE 24
-	#macro ANIM_KNUXGLIDETURN 25
+	#macro ANIM_KNUXGLIDETURN 25	
 	#macro ANIM_KNUXCLIMBIDLE 26
 	#macro ANIM_KNUXCLIMBUP 27
 	#macro ANIM_KNUXCLIMBDOWN 28

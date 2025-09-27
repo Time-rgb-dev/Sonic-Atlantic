@@ -9,13 +9,15 @@ function player_state_wallslide()
 	
 	//gravity_allow = false;
 	direction_allow = false;
-	//y_speed = 0;
 	
 		if ground = true
 	{
 		state = ST_JUMP;
 	}
-	create_effect(x - 8 + random_range(0, 16), y - 4, spr_wind_effect, random_range(0.1, 0.9), 1, 0, -4)
+	
+	if !audio_is_playing(sfx_slide_fast)
+	{play_sound(sfx_slide_fast);}
+	create_effect(x + hitbox_w*(facing) + random_range(-5, 5), y + hitbox_h, spr_dustpuff_effect, random_range(0.4, 1.1), 1, random_range(-0.1, 0.1), random_range(-0.1, 0.4), 0, 0.045);
 	
 	var input_towards_facing = facing ? Input.Right : Input.Left;
 			

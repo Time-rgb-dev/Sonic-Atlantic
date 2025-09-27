@@ -45,7 +45,6 @@ function player_state_jump(){
 		}
 		    }
 			
-			
 		else
 		{
 				//Change animation
@@ -73,7 +72,7 @@ function player_state_jump(){
 		player_reposition_mode(CMODE_FLOOR);
 			
 		//Play the sound
-		play_sound(sfx_jump);
+		play_sound(sfx_land);
 		}
 	}
 	
@@ -90,6 +89,19 @@ function player_state_jump(){
 		}
 	}
 	
+	if(Input.RPress && !ground && state == ST_JUMP and global.rings >= 5)
+	{
+		{
+			state = ST_FALL;
+			jump_flag = false;
+			ceiling_lock = 2;
+			x_speed = (7.5 * facing)
+			y_speed = 0.0;
+			obj_camera.h_lag = 5.0;
+			play_sound(sfx_release);
+			global.rings -= 5;
+		}
+	}
 	//Stop if its not jump state
 	if(state != ST_JUMP) 
 	{
@@ -117,4 +129,19 @@ function player_state_jump(){
 	
 	//Reset when grounded
 	if(ground) state = ST_NORMAL;
+	
+	//Get input presses
+	var mov = hold_right - hold_left;
+	
+		//Pushing animation
+	if(mov = facing && !ground)
+	{
+		if(point_check((wall_w + 1) * facing, wall_h)|| check_object(-(wall_w + 1) * facing, hitbox_h, (wall_w + 1) * facing, hitbox_h))
+		{
+			anim = ANIM_WALLSLIDE;
+			state = ST_WALLSLIDE;
+		}
+	}
+	
+	
 }

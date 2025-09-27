@@ -19,6 +19,8 @@
     global.a = ord("Z");
     global.b = ord("X");
     global.c = ord("C");
+	global.l = ord("S");
+	global.r = ord("D");
     global.start = vk_enter;
 	
 	//Setup volume
@@ -60,6 +62,9 @@
 	global.chaotix_dust_effect = true;		//Flag that disables classic spindash/skid dust effect
 	global.camera_type = 1;					//Vertical camera scrolling type, 0 = Megadrive, 1 = Mania
 	global.knux_camera_smooth = true;		//Flag for using smooth ledge climb camera movement
+	
+	//Badge Variables
+	global.maxrev_bonus = 0;
 	
 	//Font setup:
 	global.hud_number = font_add_sprite(spr_hud_numbers, ord("0"), false, 0);

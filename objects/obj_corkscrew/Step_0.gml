@@ -1,110 +1,75 @@
-// If there are no corkscrews, stop processing
-//if(!instance_exists(Corkscrew))
-//exit;
+depth = obj_player.depth + (dcos(spiral_timer-90)*sign(obj_player.x_speed));
 
-with obj_player
+if(obj_player.ground && player_collide_object(C_MAIN) && abs(obj_player.x_speed) >= 4)
 {
-// If there IS a corkscrew, but we aren't colliding with it, we're moving too slow, or the ground_angle is wrong, stop processing
-var _CorkscrewHandle = collision_rectangle(x, y-5, x+(16*sign(ground_speed)), y+28, self, true, true);
-if(_CorkscrewHandle == noone) or (abs(ground_speed) < 6) or ((ground_angle < 340) and (ground_angle > 20))
-exit;
+	triggered = true;
+	obj_camera.limit_bottom = y+ WINDOW_WIDTH/2;
+	obj_camera.limit_top = y- WINDOW_WIDTH/2;
+}
 
-// Initialize the Variables we'll need
-
-var _Width    = 384; 
-var _Height   = 70;
-var _XStart   = _CorkscrewHandle.x;
-var _XEnd     = _CorkscrewHandle.x+_Width;
-    
-// If we're in the corkscrew, calculate position
-
-
-if(x > _CorkscrewHandle.x && x <_XEnd){
+if(player_collide_object(C_MAIN) && abs(obj_player.x_speed) >= 4 && triggered)
+{
+	with(obj_player)
+	{
+		state = ST_TWIRL;
 		
-var _playerAngleCorkscrew = (((x-_XStart)/384)*360) mod 360;
-
-y = _CorkscrewHandle.y-20-(_Height/2)+((_Height/2)*dcos(_playerAngleCorkscrew));
-
-// Zero out vertical movement for now.
-// Make sure the ground Flag stays checked or the player will stop processing the corkscrew
-
-
-
-y_speed= 0;
-ground = true;
-
-// If we aren't spinning, perform the corkscrew animation
-
-
-if ((!animation_is_playing(animator, ANIM_ROLL)))
-{
-     animation_play(animator, ANIM_CORKSCREW);
-} 
-}
-
-else
-
-{
-	
-	
-// If we're not in the corkscrew, reset the animation and stop processing
-
-
-if ((x_speed > 0) and (x > _XEnd)) or ((x_speed < 0) and (x < _XEnd)) {
-	
-if (animation_is_playing(animator, ANIM_ROLL))
-{
-	
-attacking = true;
-
-animation_play(animator, ANIM_ROLL);
-
-} else {
-	
-animation_play(animator, ANIM_RUN);
-
-}
-}
-exit;
-}
-
-if(!animation_is_playing(animator, ANIM_ROLL))
-{
-	
-// Set subimage based on progress through the 
-
-
-    image_index = ((image_number-1)*((x-_XStart)/(_Width)));
-
-//// Handle Skidding edge case
-
-
-//    if(((ground_speed >= 4.5 && Input.Left) || (ground_speed <= -4.5 && Input.Right))){
-//        Animation = AnimSkid;
-
-//audio_sfx_play(sfxSkid, false);
-//instance_create(x, y + RadiusY, DustPuff);
- }
-else{
-	
-// Handle rolling physics through corkscrew
-
-    if(ground_speed > 0)
-	
-        ground_speed = max(ground_speed - roll_influence_down, 0);
+		other.spiral_timer += abs(x_speed);
+		y = other.y + other.spiral_height * dcos(other.spiral_timer - 24);
 		
-    else if(ground_speed < 0)
+		if(!animation_is_playing(animator, ANIM_ROLL))
+		{
+			if(sign(x_speed) == 1) animation_play(obj_player.animator, ANIM_CORKSCREW); 
+			else animation_play(obj_player.animator, ANIM_CORKSCREW);
+			
+			other.twist_angle = other.spiral_timer/other.spiral_lenght*360;
+			other.player_twist_frame = (other.spiral_timer/other.spiral_lenght*12) mod 12;
+			
+			animation_set_speed(animator, 0);
+			
+			if(sign(x_speed) == 1)
+			{
+				animation_set_frame(animator, other.player_twist[other.player_twist_frame])
+			}
+			else
+			{
+				animation_set_frame(animator, other.player_twist_alt[12-other.player_twist_frame])
+			}
+		}
+		y_speed = 0;
+		
+		if(state == ST_TWIRL && !animation_is_playing(animator, ANIM_ROLL) && press_down)
+		{
+			animation_play(animator, ANIM_ROLL)
+			play_sound(sfx_roll);
+		}
+		
+		if(state == ST_TWIRL && press_action)
+		{
+			other.triggered = false;
+			state = ST_JUMP;
+			play_sound(sfx_jump);
+			y_speed = -6 * dcos(other.spiral_timer - 24)
+		}
+	}
+}
+else if(triggered == true)
+{
+	triggered = false;
+	with(obj_player)
+	{
+		if(animation_is_playing(animator, ANIM_ROLL))
+			state = ST_ROLL;
+		
+		if((animation_is_playing(animator, ANIM_CORKSCREW)) || (animation_is_playing(animator, ANIM_CORKSCREW)))
+		{
+			animation_set_speed(animator, 3);
+		}
+	}
 	
-        ground_speed = min(ground_speed + roll_influence_down, 0);
-    
-    if(Input.Left && ground_speed > 0)
-	
-ground_speed -= RollDec;
-
-    if(Input.Right && ground_speed < 0)
-	
-	ground_speed += friction_speed;
-    
 }
 
+if(!triggered)
+{
+	spiral_timer = 0;
+	player_twist_frame = 0;
 }

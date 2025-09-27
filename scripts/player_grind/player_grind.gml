@@ -27,14 +27,14 @@ if !grinding
 // Accelerate to minimum speed
   if facing = 1
   {
-	  if ground_speed < 2
+	  if ground_speed < 0.5
 	  {
 		  ground_speed = ground_speed + 0.25;
 	  }
   }
   else
-      {
-		  if ground_speed > -2
+      {	 
+		  if ground_speed > -0.5
 		  {
 			  ground_speed = ground_speed - 0.25;
 		  }

@@ -62,7 +62,7 @@ function player_state_spindash(){
 		
 		//Update spindash rev
 		spindash_pitch = min(spindash_pitch + 1, 12);
-		spindash_rev = min(spindash_rev + 2, 9);
+		spindash_rev = min(spindash_rev + 2, 9 + global.maxrev_bonus);
 		
 		//Change the spindash sound pitch
 		if(spindash_pitch != 1) 

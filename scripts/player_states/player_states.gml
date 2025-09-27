@@ -39,6 +39,8 @@ function player_states(){
 	player_state_spring();
 	player_state_skid();
 	player_state_knockout();
+	player_state_twirl();
+	player_state_fall();
 	//player_state_grind();
 	
 	//Tails object
