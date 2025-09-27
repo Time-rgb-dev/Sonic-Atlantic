@@ -6,7 +6,7 @@
   "name":"player_states",
   "parent":{
     "name":"States",
-    "path":"folders/Scripts/Player Scripts/States.yy",
+    "path":"folders/Sounds/Sound Effects/States.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

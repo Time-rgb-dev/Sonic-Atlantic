@@ -19,9 +19,9 @@
   "height":245,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"e299137a-7377-4f50-af2c-f7a325a7830c","blendMode":0,"displayName":"default","isLocked":false,"name":"e299137a-7377-4f50-af2c-f7a325a7830c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"e5973e6b-d6a8-4422-bcad-7bc610b1eab6","blendMode":0,"displayName":"Layer 3","isLocked":false,"name":"e5973e6b-d6a8-4422-bcad-7bc610b1eab6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"47cbf014-80e0-4c94-ac40-4ac5c7c71fb5","blendMode":0,"displayName":"Layer 4","isLocked":false,"name":"47cbf014-80e0-4c94-ac40-4ac5c7c71fb5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"e299137a-7377-4f50-af2c-f7a325a7830c","blendMode":0,"displayName":"prisma peak","isLocked":false,"name":"e299137a-7377-4f50-af2c-f7a325a7830c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"e5973e6b-d6a8-4422-bcad-7bc610b1eab6","blendMode":0,"displayName":"mountains","isLocked":false,"name":"e5973e6b-d6a8-4422-bcad-7bc610b1eab6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"47cbf014-80e0-4c94-ac40-4ac5c7c71fb5","blendMode":0,"displayName":"tower","isLocked":false,"name":"47cbf014-80e0-4c94-ac40-4ac5c7c71fb5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_bg_aaz1_mountain",
   "nineSlice":null,

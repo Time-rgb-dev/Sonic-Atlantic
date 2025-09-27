@@ -89,7 +89,7 @@ function player_state_jump(){
 		}
 	}
 	
-	if(Input.RPress && !ground && state == ST_JUMP and global.rings >= 5)
+	if(Input.RPress && !ground && state == ST_JUMP) //and global.rings >= 5)
 	{
 		{
 			state = ST_FALL;
@@ -99,7 +99,7 @@ function player_state_jump(){
 			y_speed = 0.0;
 			obj_camera.h_lag = 5.0;
 			play_sound(sfx_release);
-			global.rings -= 5;
+			//global.rings -= 5;
 		}
 	}
 	//Stop if its not jump state

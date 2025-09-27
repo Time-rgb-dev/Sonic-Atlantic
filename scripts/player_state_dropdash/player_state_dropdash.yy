@@ -6,7 +6,7 @@
   "name":"player_state_dropdash",
   "parent":{
     "name":"Sonic States",
-    "path":"folders/Scripts/Player Scripts/States/Sonic States.yy",
+    "path":"folders/Sounds/Sound Effects/States/Sonic States.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

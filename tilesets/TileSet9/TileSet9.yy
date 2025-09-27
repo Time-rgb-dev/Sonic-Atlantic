@@ -1,13 +1,13 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"tile_aaz1_zz",
+  "%Name":"TileSet9",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"tile_aaz1_zz",
+  "name":"TileSet9",
   "out_columns":0,
   "out_tilehborder":2,
   "out_tilevborder":2,

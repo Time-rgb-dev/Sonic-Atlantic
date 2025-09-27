@@ -9,7 +9,7 @@
 				play_sound(sfx_roll);	
 			}
 			
-			obj_player.force_roll = true;
+			obj_player.force_roll = false;
 			obj_player.state = ST_ROLL;
 		}
 		
@@ -28,7 +28,7 @@
 				play_sound(sfx_roll);	
 			}
 			
-			obj_player.force_roll = true;
+			obj_player.force_roll = false;
 			obj_player.state = ST_ROLL;
 		}
 		
